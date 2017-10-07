@@ -1,31 +1,10 @@
 name: "main"
-scale_along_z: 0
-embedded_instances {
-  id: "logo"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/logo.atlas\\\"\\n"
-  "default_animation: \\\"logo\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
+instances {
+  id: "glow_target"
+  prototype: "/glow/glow_target.go"
   position {
-    x: 640.0
-    y: 340.0
+    x: 0.0
+    y: 0.0
     z: 0.0
   }
   rotation {
@@ -40,3 +19,144 @@ embedded_instances {
     z: 1.0
   }
 }
+instances {
+  id: "dummy"
+  prototype: "/main/dummy.go"
+  position {
+    x: 137.249
+    y: 142.739
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy1"
+  prototype: "/main/dummy.go"
+  position {
+    x: 247.049
+    y: 301.948
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy2"
+  prototype: "/main/dummy.go"
+  position {
+    x: 406.258
+    y: 137.249
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy3"
+  prototype: "/main/dummy.go"
+  position {
+    x: 527.038
+    y: 532.528
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy4"
+  prototype: "/main/dummy.go"
+  position {
+    x: 746.637
+    y: 307.438
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy5"
+  prototype: "/main/dummy.go"
+  position {
+    x: 131.759
+    y: 477.628
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dummy_no_glow"
+  prototype: "/main/dummy_no_glow.go"
+  position {
+    x: 301.948
+    y: 527.038
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+scale_along_z: 0

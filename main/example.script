@@ -1,0 +1,22 @@
+math.randomseed(os.time())
+function init(self)
+	self.w = tonumber(sys.get_config("display.width"))
+	self.h = tonumber(sys.get_config("display.height"))
+	self.dir = vmath.vector3(math.random() * 2.0 - 1.0, math.random() * 2.0 - 1.0, 0.0)
+	self.speed = 500
+	self.size = vmath.vector3(64, 64, 0)
+end
+
+function update(self, dt)
+	local p = go.get_position()
+	local p2 = p + self.dir * self.speed * dt
+	
+	if p2.x - self.size.x < 0 or p2.x + self.size.x > self.w then
+		self.dir.x = -self.dir.x
+	end
+	if p2.y - self.size.y < 0 or p2.y + self.size.y > self.h then
+		self.dir.y = -self.dir.y
+	end
+	p = p + self.dir * self.speed * dt
+	go.set_position(p)
+end
